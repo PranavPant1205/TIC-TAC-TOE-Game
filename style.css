@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(135deg, #0FA4AF, #1E2A78);
+    text-align: center;
+    color: #fff; 
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmin;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 7vmin;
+    color: #de1f1f;
+    cursor: pointer;
+    background-color: aliceblue;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.box:hover{
+    background-color: #dae3eb;
+}
+
+#resetbtn{
+    border-radius: 1rem;
+    padding: 10px;
+    border: none;
+    font-size: medium;
+    font-style: italic;
+    background-color: #191913;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+
+h1{
+    padding-top: 3rem;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all 0.5s;
+    animation: popUp 1s ease-out;
+    font-style: italic;
+}
+
+@keyframes popUp {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#newbtn{
+    border-radius: 1rem;
+    padding: 10px;
+    border: none;
+    font-size: medium;
+    font-style: italic;
+    background-color: #191913;
+    color: #fff;
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+#resetbtn:hover, #newbtn:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
+
+#result{
+color: #c5a0a0;
+font-size: 5vmin;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+background: rgba(0, 0, 0, 0.5);
+padding: 10px 20px;
+border-radius: 1rem;
+box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.win-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide{
+    display: none; 
+}
+
